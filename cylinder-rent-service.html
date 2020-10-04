@@ -89,7 +89,7 @@
          <!-- end main menu -->
         <!-- =================================END HEADER SECTION   ============================================= -->
 
-        <!-- ================================START MOBILE MENU  ========================================= --> 
+        <!-- ================================START MOBILE MENU  ================================================ --> 
        <div class="mobile-menu-area">
            <div class="top-header">
                 <div class="container">
@@ -115,7 +115,7 @@
                     </div>
                 </div>       
            </div>
-            <nav class="navbar navbar-light bg-light navbar-expand-lg">
+            <nav class="navbar navbar-light bg-light navbar-expand-lg box-shadow">
                 <div class="container">
                     <a class="navbar-brand" href="index.html"><img class="logo-size " src="assets/images/logo/logo-retina-1.png" alt=""></a>
 
@@ -126,7 +126,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#our-service">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#our-service">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Online Agreement</a>
@@ -142,147 +142,107 @@
        </div>
         <!-- =================================END MOBILE MENU  ============================================= -->
 
-        <!-- =================================START ABOUT SECTION MENU ===================================== -->
-        <section class="about-section section-padding clearfix">
+        <!-- =================================START CYLINDER SERVICE SECTION =================================== -->
+        <section class="cylinder-service-section section-padding clearfix">
             <div class="container">
-                <div class="row justify-content-center">
-                    <!-- about left -->
-                    <div class="col-xl-6 col-lg-6 col-md-8">
-                        <div class="about-left">
-                            <img class="w-100" src="assets/images/about/about.jpg" alt="about">
-                        </div>
-                    </div>
+                <form action="#" method="POST">
+                    <div class="cylinder-form">
+                        <div class="row justify-content-center">
+                            <!-- Patient Information -->
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="patient-info">
+                                    <h4>Patient Information</h4>
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <label for="pname">Name*</label>
+                                        <input type="text" class="form-control" placeholder="Patient Name" name="pName">
+                                    </div>
+                                    <!-- Age -->
+                                    <div class="form-group">
+                                        <label for="page">Age*</label>
+                                        <input type="text" class="form-control" placeholder="Patient Age" name="pAge">
+                                    </div>
+                                    <!-- Address -->
+                                    <div class="form-group">
+                                        <label for="paddress">Address*</label>
+                                        <input type="text" class="form-control" placeholder="Patient Address" name="pAdress">
+                                    </div>
+                                    <!-- NID -->
+                                    <div class="form-group">
+                                        <label for="pnid">NID*</label>
+                                        <input type="text" class="form-control" placeholder="Patient NID Number" name="pNid">
+                                    </div>
+                                    <!-- Birth Certificate -->
+                                    <div class="form-group">
+                                        <label for="pbirth">Birth Cirtificate Number*</label>
+                                        <input type="text" class="form-control" placeholder="Patient Birth Cirtificate Number" name="pBirth">
+                                    </div>
+                                    <!-- Passport Number -->
+                                    <div class="form-group">
+                                        <label for="ppassport">Passport Number*</label>
+                                        <input type="text" class="form-control" placeholder="Patient Passport Number" name="pPassport">
+                                    </div>
+                                    <!-- Mobile Number -->
+                                    <div class="form-group">
+                                        <label for="pmobile">Mobile Number*</label>
+                                        <input type="tel" class="form-control" placeholder="Patient Mobile Number" name="pMoblie">
+                                    </div>
+                                </div>
+                            </div>
 
-                    <!-- about right -->
-                    <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="about-right">
-                            <!-- about title -->
-                            <div class="about-title">
-                                <h3>Welcome to <span>our company</span></h3>
-                            </div>
-                            <!-- about content -->
-                            <div class="about-content">
-                                <p>Nulla facilisi. Morbi volutpat urna lorem, eget tristique justo aliquam eu. Sed pretium vitae dolor id vul putate. Nunc eget nunc non nisl pharetra dignissim. Vivamus eu neque tortor. In placerat metus non imperdiet ullamcorper. Nulla et feugiat leo. Sed alamo interdum nisi at eros feugiat lobortis. Cras ullamcor per lacus ante, in dapibus quam fermentum imperdietac. Pellentesque viverra ipsum con consectetur adipiscing elit.?</p>
-                            </div>
-                            <!-- about button -->
-                            <div class="about-button">
-                                <a href="#">Learn More</a>
+                            <!-- Guardian Information -->
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="guardian-info">
+                                    <h4>Guardian Information</h4>
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <label for="gname">Name*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian Name" name="gName">
+                                    </div>
+                                    <!-- Age -->
+                                    <div class="form-group">
+                                        <label for="gage">Age*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian Age" name="gAge">
+                                    </div>
+                                    <!-- Address -->
+                                    <div class="form-group">
+                                        <label for="gaddress">Address*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian Address" name="gAdress">
+                                    </div>
+                                    <!-- NID -->
+                                    <div class="form-group">
+                                        <label for="gnid">NID*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian NID Number" name="gNid">
+                                    </div>
+                                    <!-- Birth Certificate -->
+                                    <div class="form-group">
+                                        <label for="gbirth">Birth Cirtificate Number*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian Birth Cirtificate Number" name="gBirth">
+                                    </div>
+                                    <!-- Passport Number -->
+                                    <div class="form-group">
+                                        <label for="gpassport">Passport Number*</label>
+                                        <input type="text" class="form-control" placeholder="Guardian Passport Number" name="gPassport">
+                                    </div>
+                                    <!-- Mobile Number -->
+                                    <div class="form-group">
+                                        <label for="gmobile">Mobile Number*</label>
+                                        <input type="tel" class="form-control" placeholder="Guardian Mobile Number" name="gMoblie">
+                                    </div>
+                                    <div class="row justify-content-end">
+                                        <div class="col-5 mt-4">
+                                        <input type="submit" value="Submit" name="submit" class="form-control form-control-lg submit-button-bg">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
-        <!-- ===================================END ABOUT SECTION MENU ===================================== -->
+            <!-- =================================END CYLINDER SERVICE SECTION ===================================== -->
 
-        <!-- ================================= START OUR TEAM SECTION ========================================== -->
-        <section class="our-team-section section-padding clearfix">
-            <div class="container">
-                <div class="row">
-                    <!-- section title -->
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h2>Meet Our <span>Team</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quam, autem, iusto mollitia beatae maxime ut illum sapiente excepturi veniam.</p>
-                        </div>
-                    </div>
-                </div>
-                    <!-- our team -->
-                    <div class="row our-team owl-carousel owl-theme no-gutters">
-                        <!-- single team -->
-                    <div class="col-xl-12 text-center">
-                        <div class="our-team-single-item">
-                            <div class="card">
-                                <img class="w-100" src="assets/images/team/team-1.jpg" alt="">
-                                <div class="card-body">
-                                    <h4>David Parker</h4>
-                                    <small>Chief Executive Officer</small>
-                                    <div class="team-social-link">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- single team -->
-                    <div class="col-xl-12 text-center">
-                        <div class="our-team-single-item">
-                            <div class="card">
-                                <img class="w-100" src="assets/images/team/team-2.jpg" alt="">
-                                <div class="card-body">
-                                    <h4>David Parker</h4>
-                                    <small>Chief Executive Officer</small>
-                                    <div class="team-social-link">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- single team -->
-                    <div class="col-xl-12 text-center">
-                        <div class="our-team-single-item">
-                            <div class="card">
-                                <img class="w-100" src="assets/images/team/team-3.jpg" alt="">
-                                <div class="card-body">
-                                    <h4>David Parker</h4>
-                                    <small>Chief Executive Officer</small>
-                                    <div class="team-social-link">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- single team -->
-                    <div class="col-xl-12 text-center">
-                        <div class="our-team-single-item">
-                            <div class="card">
-                                <img class="w-100" src="assets/images/team/team-4.jpg" alt="">
-                                <div class="card-body">
-                                    <h4>David Parker</h4>
-                                    <small>Chief Executive Officer</small>
-                                    <div class="team-social-link">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- single team -->
-                    <div class="col-xl-12 text-center">
-                        <div class="our-team-single-item">
-                            <div class="card">
-                                <img class="w-100" src="assets/images/team/team-5.jpg" alt="">
-                                <div class="card-body">
-                                    <h4>David Parker</h4>
-                                    <small>Chief Executive Officer</small>
-                                    <div class="team-social-link">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =================================  END OUR TEAM SECTION =========================================== -->
 
         <!-- =================================       START FOOTER  SECTION        ============================== -->
         <footer class="footer-section section-padding clearfix">
@@ -291,7 +251,7 @@
                 <div class="container">
                     <div class="row pb-5">
                         <div class="col-lg-4 col-md-6  mt-lg-block part-about">
-                            <a href="index.html"><img class="footer-logo-size " src="assets/images/logo/logo-retina-1.png" alt="header logo"></a>
+                            <a href="index.html"><img class="footer-logo-size" src="assets/images/logo/logo-retina-1.png" alt="header logo"></a>
                             <p class=" ">Founded At 2011. Architecting secure, efficient and user-friendly items by writing codes to turn ideas into reality. Working on a daily basis to bring unique, standard and trendy product for various marketplace and clients.</p>
                         </div>
 

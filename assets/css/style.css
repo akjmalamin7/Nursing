@@ -162,8 +162,8 @@ input::placeholder, select option{
 /***************************************************************************************************
 ***************************************START HEADER SECTION CSS*************************************
 ****************************************************************************************************/
-.header-section{
-	padding:30px 0px 0px 0px;
+.header-section {
+	padding: 30px 0px 30px 0px;
 }
 .logo-size{
 	width:150px;
@@ -249,12 +249,12 @@ input::placeholder, select option{
 	left: 0px;
 	padding: 20px;
 	border-top: 3px solid #1AAEEE;
-	
+	transition: .5s;
 }
 .main-menu .menu-right ul li:hover ul {
 	visibility: visible;
-	top: 50px;
-	transition: .5s;
+	top: 50px;transition: .3s;
+	
 }
 .main-menu .menu-right ul ul li{}
 .main-menu .menu-right ul ul li a{}
@@ -288,7 +288,9 @@ input::placeholder, select option{
 	margin-top: 3px;
 	color: #48BEF1;
 }
-
+.box-shadow {
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,.1);
+}
 
 
 #myNav {
@@ -750,12 +752,65 @@ ul.navbar-nav {
 
 
 /***************************************************************************************************
+*************************************** START SERVICE PAGE CSS *************************************
+****************************************************************************************************/
+
+.sidebar ul li {
+	margin-bottom: 2px !important;
+	border: 1px solid rgba(0,0,0,.125) !important;
+	font-size: 16px;
+	color: #333;
+	font-weight: 500;
+}
+.sidebar ul li a{
+	color:#333 !important;
+}
+.sidebar .list-group-item {
+	border: unset;
+}
+.sidebar .list-group-item:first-child {
+	border-top-left-radius: unset;
+	border-top-right-radius: unset;
+}
+.sidebar .list-group-item:last-child {
+	border-bottom-right-radius: unset;
+	border-bottom-left-radius: unset;
+}
+/***************************************************************************************************
+*************************************** END SERVICE PAGE CSS ***************************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+******************************** START ONLINE AGREEMENT PAGE CSS ***********************************
+****************************************************************************************************/
+.patient-info, .guardian-info {
+	/* padding: 38px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1); */
+}
+/* .cylinder-form {
+	padding: 56px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+} */
+
+.patient-info h4, .guardian-info h4{
+	margin-bottom:30px;
+}
+.patient-info{
+	margin-bottom:50px;
+}
+/***************************************************************************************************
+********************************** END ONLINE AGREEMENT PAGE CSS ***********************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
 ***************************************  START FOOTER SECTTION CSS         *************************
 ****************************************************************************************************/
 .footer-section {
 	background-color: #183153;
 }
-.logo-size {
+.footer-logo-size {
 	width: 180px;
 	margin-bottom: 31px;
 }
