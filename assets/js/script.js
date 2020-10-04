@@ -27,31 +27,31 @@ jQuery(document).ready(function(){
    
 
         // our team
-    jQuery('.our-team ').owlCarousel({
-        items:1,
-        loop:true,
-        margin:10,
-        nav:false,
-        autoplay:true,
-        autoplayTimeout:10000,
-        dots:true,
-        slideTransition:'linear',
-        slideBy:1,
-        // navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
-        responsive:{
-            0:{
-                items:1
-            },
-            575:{
-                items:2
-            },
-            768:{
-                items:3
-            }
+        jQuery('.our-team ').owlCarousel({
+            items:1,
+            loop:true,
+            // margin:10,
+            nav:false,
+            // autoplay:true,
+            autoplayTimeout:10000,
+            dots:true,
+            slideTransition:'linear',
+            slideBy:1,
+            // navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+            responsive:{
+                0:{
+                    items:1
+                },
+                576:{
+                    items:2
+                },
+                992:{
+                    items:3
+                }
 
-        }
-    
-    });
+            }
+        
+        });
 
    // happy client
     jQuery('.happy-client ').owlCarousel({

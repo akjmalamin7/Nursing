@@ -48,7 +48,7 @@ body{
 a:hover{
 	text-decoration:none;
 }
-p, h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     margin:0;
     padding:0;
 }
@@ -68,11 +68,11 @@ h1 {
 h2 {
 	font-weight: 600;
 	font-style: normal;
-	font-size: 40px;
+	font-size: 32px;
 	line-height: 46px;
 }
 h3{
-    font-weight: 700;
+    font-weight: 400;
 	font-style: normal;
 	
 }
@@ -138,11 +138,11 @@ h6{
 input, textarea, button, select{
 	border-radius: 0px !important;
 }
-input:focus, select:focus{
+input:focus, select:focus, textarea:focus{
     outline: 0 none !important;
     -webkit-box-shadow: unset !important;
 			box-shadow: unset !important;
-			border:1px solid #EE4993 !important;	
+			border:1px solid #48BEF1 !important;	
 }
 button:focus{
 	border:none !important;	
@@ -151,9 +151,8 @@ input::placeholder, select option{
 	font-weight: 400;
 }
 ::placeholder{
-	font-size:16px;
+	font-size:14px;
 }
-
 
 /***************************************************************************************************
 ******************************************* END GLOBAL AREA CSS ************************************
@@ -164,7 +163,7 @@ input::placeholder, select option{
 ***************************************START HEADER SECTION CSS*************************************
 ****************************************************************************************************/
 .header-section{
-	padding:30px 0px;
+	padding:30px 0px 0px 0px;
 }
 .logo-size{
 	width:150px;
@@ -259,6 +258,75 @@ input::placeholder, select option{
 }
 .main-menu .menu-right ul ul li{}
 .main-menu .menu-right ul ul li a{}
+
+
+/* MOBILE MENU */
+.top-header {
+	background-color: #F9F9FA;
+}
+.bg-light {
+	background-color: #fff !important;
+}
+.mobile-menu-area .header-address ul li {
+	line-height: 20px;
+	font-size: 14px;
+}
+.mobile-menu-area .header-address ul li span i{
+	font-size: 22px;
+	margin-right: 11px;
+	margin-top: 3px;
+	color: #48BEF1;
+}
+.mobile-menu-area .header-contact ul li a {
+	color: #333;
+	font-weight: 500;
+	font-size: 14px;
+}
+.mobile-menu-area .header-contact ul li span i {
+	font-size: 19px;
+	margin-right: 11px;
+	margin-top: 3px;
+	color: #48BEF1;
+}
+
+
+
+#myNav {
+	position: absolute;
+	background: #48BEF1;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 9999;
+	top: 80px;
+	left: 0;
+}
+ul.navbar-nav {
+	width: 732px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.mobile-menu-area .navbar-light .navbar-nav .nav-link {
+	display: inline-block;
+	font-size: 16px !important;
+	color: #fff;
+	font-weight: 500;
+}
+.dropdown-menu {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: none !important;
+}
+.dropdown-item{
+	color:#fff;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+	color: #fff !important;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+
+/* MOBILE MENU */
 /***************************************************************************************************
 *****************************************END HEADER SECTION CSS*************************************
 ****************************************************************************************************/
@@ -269,10 +337,10 @@ input::placeholder, select option{
 ****************************************** START HOME PAGE CSS**************************************
 ****************************************************************************************************/
 /* start home slider section */
-.home-slider-section{
-	width:100%;
+.home-slider-section {
+	width: 100%;
 	position: relative;
-	height: 750px;
+	margin-bottom: -30px;
 }
 .home-slider-section::after {
 	content: "";
@@ -289,8 +357,7 @@ input::placeholder, select option{
 }
 .home-slider-section .home-slick-slider img{
 	width:100%;
-	height: 750px;
-	object-fit: cover;
+	height: auto;
 }
 .slick-dots {
 	bottom: 19px;
@@ -304,10 +371,26 @@ input::placeholder, select option{
 	opacity: .75;
 	color:#06AEF7;
 }
-.brand-cart {
-	color: #1D1D1D;
-	font-size: 23px;
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	/* height: 20px; */
+	/* margin: 0 5px; */
+	padding: 0;
+	cursor: pointer;
+	margin: 0 20px;
 }
+.slick-dots li button::before {
+	font-size: 0 !important;
+	background: #fff;
+	/* border-radius: 0px !important; */
+	width: 50px;
+	height: 4px;
+	border-radius: 5px !important;
+}
+/* end home slider section */
 
 /* start services section */
 .services-section {
@@ -317,6 +400,7 @@ input::placeholder, select option{
 .services-section .single-service {
 	margin-bottom: 46px;
 }
+
 .services-section .single-service .card{
 	border-radius: 0px !important;
 	border: 1px solid #f4f4f4 !important;
@@ -378,6 +462,8 @@ input::placeholder, select option{
 	line-height: 22px;
 	display: none;
 }
+
+
 /* end services section */
 
 
@@ -480,7 +566,7 @@ input::placeholder, select option{
 }
 .happy-client-section .happy-client-left .owl-theme .owl-dots .owl-dot span {
 	width: 38px;
-	height: 5px;
+	height: 4px;
 }
 .happy-client-section .happy-client-left .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background: #48BEF1;
@@ -499,6 +585,169 @@ input::placeholder, select option{
 /***************************************************************************************************
 ******************************************  END HOME PAGE CSS **************************************
 ****************************************************************************************************/
+
+
+/***************************************************************************************************
+****************************************** START ABOUT PAGE CSS ************************************
+****************************************************************************************************/
+/* about left */
+.about-section{
+	background-color: #F1F3F6;
+}
+.about-section .about-left{
+	position: relative;
+}
+.about-section .about-left::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 7px;
+	top: 8px;
+	border-right: 8px solid #48BEF1;
+	border-bottom: 8px solid #48BEF1;
+}
+/* about right */
+.about-section .about-right {
+	padding-left: 20px;
+}
+
+.about-section .about-right .about-title h3{
+	margin-bottom: 17px;
+	position: relative;
+	border-bottom: 1px solid #06AEF7;
+	padding-bottom: 15px;
+	text-transform: capitalize;
+}
+.about-section .about-right .about-title h3 span{
+	color:#06AEF7;
+}
+.about-section .about-right .about-title h3::after {
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 3px;
+	background: #06AFF8;
+	bottom: -2px;
+	left: 0;
+}
+
+.about-section .about-right .about-content p {
+	border-bottom: 1px dashed #48BEF1;
+	margin-top: 30px;
+	margin-bottom: 16px;
+	padding-bottom: 22px;
+}
+.about-section .about-right .about-button a {
+	display: inline-block;
+	padding: 10px 40px;
+	background: #48BEF1 !important;
+	font-size: 15px !important;
+	font-weight: 400;
+	color: #fff !important;
+	text-transform: uppercase;
+}
+/***************************************************************************************************
+****************************************** END ABOUT PAGE CSS **************************************
+****************************************************************************************************/
+
+
+/***************************************************************************************************
+*************************************** START CONTACT PAGE CSS *************************************
+****************************************************************************************************/
+/* contact top section */
+.contact-top-section {
+	background-color: #F1F3F6;
+}
+.contact-top .single-contact .card{
+	border:none;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	margin-bottom:27px;
+}
+.contact-top .single-contact .card .card-body ul li {
+	font-size: 14px;
+}
+.contact-top .single-contact .card .card-body ul li i{
+	font-size: 30px;
+	color: #06AFF8;
+}
+/* contact left */
+.contact-section{
+	background-image: url(../images/bg-image/contact-form-banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.contact-section .contact-left {
+	margin-bottom: 50px;
+}
+.contact-right-title h3, .contact-section .contact-left .contact-title h3 {
+	margin-bottom: 17px;
+	position: relative;
+	border-bottom: 1px solid #06AEF7;
+	padding-bottom: 15px;
+	text-transform: capitalize;
+}
+.contact-right-title h3::after, .contact-section .contact-left .contact-title h3::after {
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 3px;
+	background-color: #06AFF8;
+	bottom: -2px;
+	left: 0;
+}
+.contact-section .contact-left .contact-left-subheading h2 {
+	font-size: 28px;
+	font-weight: 500;
+}
+.contact-section .contact-left .contact-left-subheading p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.contact-left-content .card {
+	border: none !important;
+	background-color: #F4F5F8;
+	border-left: 4px solid #48BEF1 !important;
+	border-radius: 0px !important;
+}
+/* contact right */
+.contact-section .contact-right {
+	/* padding-left: 30px; */
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	padding: 56px 50px 39px 50px;
+	background: #fff;
+}
+.contact-right-title {
+	margin-bottom: 31px !important;
+}
+.submit-button-bg {
+	background-color: #06AFF8;
+	color: #fff;
+	border: none !important;
+	font-size: 15px;
+}
+.submit-button-bg:focus{
+	background-color: #06AFF8;
+	color:#fff;
+	border:none !important
+
+}
+
+
+/* branch */
+
+
+.maps-area iframe {
+	border: none !important;
+	width: 100%;
+	height: 300px;
+	margin-bottom: -7px;
+}
+/***************************************************************************************************
+*************************************** END CONTACT PAGE CSS ***************************************
+****************************************************************************************************/
+
 
 /***************************************************************************************************
 ***************************************  START FOOTER SECTTION CSS         *************************
