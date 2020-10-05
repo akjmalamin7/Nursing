@@ -153,7 +153,9 @@ input::placeholder, select option{
 ::placeholder{
 	font-size:14px;
 }
-
+.active{
+	color:#333 !important;
+}
 /***************************************************************************************************
 ******************************************* END GLOBAL AREA CSS ************************************
 ****************************************************************************************************/
@@ -186,6 +188,10 @@ input::placeholder, select option{
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 900;
+	transition:.5s;
+}
+.header-section .main-header .header-contact ul li a:hover{
+	color: #48BEF1;
 }
 .header-section .main-header .header-contact ul li i {
 	font-size: 20px;
@@ -198,7 +204,12 @@ input::placeholder, select option{
 .menu-area {
 	background-color: #48BEF1;
 	padding: 10px 0px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }
+
 /* menu left */
 .main-menu .menu-left{
 	float:left;
@@ -215,9 +226,23 @@ input::placeholder, select option{
 	padding: 6px 20px;
 	color: #fff !important;
 	font-weight: 500;
+	transition:.5s;
+	position: relative;
 }
-
-
+.main-menu .menu-left ul li a::after{
+	content:"";
+	position: absolute;
+	width:0;
+	height:2px;
+	background:#fff;
+	top:100%;
+	left:0;
+	transition:.5s;
+	
+}
+.main-menu .menu-left ul li a:hover::after{
+	width:100%;
+}
 /* menu right */
 .main-menu .menu-right{
 	float:right;
@@ -229,13 +254,16 @@ input::placeholder, select option{
 .main-menu .menu-right ul li a {
 	display: inline-block;
 	font-size: 16px !important;
-	padding: 6px 20px;
-	color: #fff !important;
+	padding: 7px 20px;
+	/* color: #fff !important; */
 	font-weight: 500;
+	transition: .5s;
+	color: #333;
 }
+
 .menu-right-border{
-	border: 2px solid #fff;
 	border-radius: 25px;
+	background: #fff;
 }
 
 /* agreement sub menu */
@@ -257,9 +285,24 @@ input::placeholder, select option{
 	
 }
 .main-menu .menu-right ul ul li{}
-.main-menu .menu-right ul ul li a{}
+.main-menu .menu-right ul ul li a{
+	color:#fff !important;
+	position: relative;
+}
 
-
+.main-menu .menu-right ul ul li a::after{
+	content:"";
+	position: absolute;
+	width:0;
+	height: 2px;
+	background: #fff;
+	transition:.5s;
+	left:0;
+	top:100%;
+}
+.main-menu .menu-right ul ul li a:hover::after{
+	width:100%;
+}
 /* MOBILE MENU */
 .top-header {
 	background-color: #F9F9FA;
@@ -299,7 +342,7 @@ input::placeholder, select option{
 	width: 100%;
 	margin: 0 auto;
 	z-index: 9999;
-	top: 80px;
+	top: 68px;
 	left: 0;
 }
 ul.navbar-nav {
@@ -310,9 +353,18 @@ ul.navbar-nav {
 .mobile-menu-area .navbar-light .navbar-nav .nav-link {
 	display: inline-block;
 	font-size: 16px !important;
-	color: #fff;
+	color: #fff !important;
 	font-weight: 500;
 }
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+}
+.dropdown-item.active {
+	color: #fff !important;
+}
+
 .dropdown-menu {
 	background-color: transparent !important;
 	border: none !important;
@@ -397,6 +449,7 @@ ul.navbar-nav {
 /* start services section */
 .services-section {
 	background: #F6F4F4;
+	position: relative;
 }
 
 .services-section .single-service {
@@ -435,6 +488,10 @@ ul.navbar-nav {
 	text-align: center;
 	border-radius: 50%;
 	color: #fff;
+	transition:.5s;
+}
+.services-section .single-service .card .card-body .card-image .single-service-inner i:hover{
+	background-color:#48BEF1;
 }
 .services-section .single-service .card .card-body .card-image .single-service-inner a{
 	display: block;
@@ -473,7 +530,7 @@ ul.navbar-nav {
 
 /* start our team section */
 .our-team-section {
-
+	position: relative;
 }
 .our-team-single-item {
 	margin-bottom:27px;
@@ -491,6 +548,10 @@ ul.navbar-nav {
 	text-align: center;
 	background: #48BEF1;
 	color: #fff;
+	transition:.5s;
+}
+.our-team-single-item .card .card-body .team-social-link i:hover{
+	transform:rotate(360deg);
 }
 .team-social-link {
 	margin-top: 22px;
@@ -513,6 +574,8 @@ ul.navbar-nav {
 
 /* start happy client section */
 /* happy client left */
+.happy-client-section {
+}
 .happy-client-section .happy-client-title{
 	/* margin-bottom:50px; */
 }
@@ -833,9 +896,26 @@ ul.navbar-nav {
 .footer-section .footer-top .part-about p{
     color:#fff;
 }
-.footer-section .footer-top .part-link ul li{}
+.footer-section .footer-top .part-link ul li {
+	line-height: 28px;
+}
 .footer-section .footer-top .part-link ul li a{
-    color:#fff !important;
+	color:#fff !important;
+	position: relative;
+	
+}
+.footer-section .footer-top .part-link ul li a::after{
+	content:"";
+	position: absolute;
+	left:0;
+	top:100%;
+	width: 0;
+	height: 2px;
+	background:#fff;
+	transition:.5s;
+}
+.footer-section .footer-top .part-link ul li a:hover::after{
+	width:100%;
 }
 .footer-section .footer-bottom .part-copyright h3 {
 	font-size: 19px;

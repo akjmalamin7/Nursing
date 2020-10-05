@@ -6,6 +6,13 @@
         object-fit: unset;
     } */
 }
+
+@media(max-width:1199px){
+    .main-menu .menu-right ul ul {
+        width: 267px;
+        left: -104px;
+    }
+}
 @media(min-width:992px){
     .mobile-menu-area{
         display: none;
@@ -26,6 +33,7 @@
     .about-section .about-right {
         padding-left: 0px;
     }
+    
    
 }
 @media(max-width:767px){
@@ -50,6 +58,9 @@
         box-shadow:unset;
         padding:unset;
     }
+    .contact-section .contact-left .contact-left-subheading h2 {
+        font-size: 26px;
+    }
 }
 @media(max-width:575px){
     .slick-dots {
@@ -61,4 +72,5 @@
     .owl-theme .owl-nav.disabled + .owl-dots {
         display: none;
     }
+
 }
