@@ -165,6 +165,7 @@ input::placeholder, select option{
 	font-size:14px;
 }
 
+
 /***************************************************************************************************
 ******************************************* END GLOBAL AREA CSS ************************************
 ****************************************************************************************************/
@@ -893,6 +894,93 @@ ul.navbar-nav {
 /***************************************************************************************************
 ********************************** END ONLINE AGREEMENT PAGE CSS ***********************************
 ****************************************************************************************************/
+
+/***************************************************************************************************
+********************************** START FIXED CALL ITEM CSS  **************************************
+****************************************************************************************************/
+.caller-row {
+	position: fixed;
+	left: 50px;
+	bottom: 55px;
+}
+.call-item {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.call-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+	display: inline-block;
+	position: relative;
+	z-index: 999;
+	
+}
+.call-circle img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.call-circle::after{
+	content:"";
+	position: absolute;
+	width:100%;
+	height:100%;
+	background:#DBA423;
+	border-radius: 50%;
+	left:0;
+	top:0;
+	animation: pulse 2.3s infinite ease-in-out;
+	z-index: -1;
+
+}
+
+.call-number {
+	width:183px;
+	position: absolute;
+	left: 0px;
+	top: 9px;
+	z-index: -1;
+	border-radius: 20px;
+	background: #DBA423;
+	box-shadow: 0px 0px 15px 0px rgba(255, 195, 55, 0.37);
+	visibility: hidden;
+	
+}
+.call-item:hover .call-number{
+	transition:1s;
+	visibility: visible;
+	left: 27px;
+}
+
+.call-number a {
+	display: inline-block;
+	padding: 10px 1px 10px 36px;
+	color: #fff;
+	font-weight: 600;
+}
+
+@keyframes pulse{
+	0% {
+		transform: scale(1);
+		opacity: .7;
+	}
+
+	100% {
+		transform: scale(1.8);
+		opacity: .01;
+	}
+
+}
+
+/***************************************************************************************************
+********************************** END FIXED CALL ITEM CSS  ****************************************
+****************************************************************************************************/
+
+
 
 
 /***************************************************************************************************

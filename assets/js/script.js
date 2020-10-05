@@ -70,10 +70,7 @@ jQuery(document).ready(function(){
 
 
     //active current page
-    jQuery(' ul li a').click(function(){
-        jQuery('li a').removeClass('active');
-        jQuery('li a').addClass('active');
-    })
+
 
 });
 
