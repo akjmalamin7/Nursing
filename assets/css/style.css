@@ -50,6 +50,7 @@ body{
     width:100%;
     position: relative;
 	font-family: 'Roboto';
+	overflow-x: hidden;
 }
 
 a:hover{
@@ -877,8 +878,8 @@ ul.navbar-nav {
 ******************************** START ONLINE AGREEMENT PAGE CSS ***********************************
 ****************************************************************************************************/
 .patient-info, .guardian-info {
-	/* padding: 38px;
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1); */
+	padding: 38px;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
 }
 /* .cylinder-form {
 	padding: 56px;
